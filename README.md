@@ -1,7 +1,7 @@
 # TLJsonFactory
 
 [![Twitter: @tplioy](https://img.shields.io/badge/contact-@tplioy-blue.svg?style=flat)](https://twitter.com/tplioy)
-[![CI Status](http://img.shields.io/travis/Thiago Lioy/TLJsonFactory.svg?style=flat)](https://travis-ci.org/thiagolioy/TLJsonFactory)
+[![CI Status](http://img.shields.io/travis/thiagolioy/TLJsonFactory.svg?style=flat)](https://travis-ci.org/thiagolioy/TLJsonFactory)
 [![Version](https://img.shields.io/cocoapods/v/TLJsonFactory.svg?style=flat)](http://cocoapods.org/pods/TLJsonFactory)
 [![License](https://img.shields.io/cocoapods/l/TLJsonFactory.svg?style=flat)](http://cocoapods.org/pods/TLJsonFactory)
 [![Platform](https://img.shields.io/cocoapods/p/TLJsonFactory.svg?style=flat)](http://cocoapods.org/pods/TLJsonFactory)
