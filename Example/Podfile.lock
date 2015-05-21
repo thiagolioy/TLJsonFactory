@@ -1,0 +1,20 @@
+PODS:
+  - Expecta (1.0.0)
+  - Specta (1.0.0)
+  - TLJsonFactory (0.1.0)
+
+DEPENDENCIES:
+  - Expecta
+  - Specta
+  - TLJsonFactory (from `../`)
+
+EXTERNAL SOURCES:
+  TLJsonFactory:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
+  Specta: 96fe05fe5c7348b5223f85e862904f6e832abb14
+  TLJsonFactory: edc7189e417c5a2d2d95392011ee2bb7747087a4
+
+COCOAPODS: 0.36.4
