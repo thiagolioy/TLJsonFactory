@@ -1,0 +1,20 @@
+{
+    "uuid": "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+    "street": "Rua XXXXXXXXXXX",
+    "number": "3A",
+    "complement": "casa dos fundos",
+    "neighboorhood": "JD Vila Maria",
+    "zipcode": "12345-678",
+    "city": "São Paulo",
+    "federal_unit": "SP",
+    "default_billing": true,
+    "default_shipping": true,
+    "contact": {
+        "name": "O nome de alguém",
+        "phone": {
+            "ddi": 55,
+            "ddd": 11,
+            "phone": 123456789
+        }
+    }
+}

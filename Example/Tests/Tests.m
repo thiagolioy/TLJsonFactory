@@ -6,38 +6,38 @@
 //  Copyright (c) 2014 Thiago Lioy. All rights reserved.
 //
 
+#import <TLJsonFactory.h>
+
 SpecBegin(InitialSpecs)
 
-describe(@"these will fail", ^{
+describe(@"TLJsonFactory", ^{
 
-    it(@"can do maths", ^{
-        expect(1).to.equal(2);
-    });
-
-    it(@"can read", ^{
-        expect(@"number").to.equal(@"string");
-    });
-    
-    it(@"will wait for 10 seconds and fail", ^{
-        waitUntil(^(DoneCallback done) {
+    describe(@"loading from array json", ^{
+        it(@"should be able to load json and convert to array", ^{
+            NSArray *json = [TLJsonFactory tl_jsonArrayFromFile:@"addresses"];
+            expect(json).notTo.beNil();
+            expect(json).notTo.beEmpty();
+        });
         
+        it(@"should have the expected zipcode for json's first object", ^{
+            NSArray *json = [TLJsonFactory tl_jsonArrayFromFile:@"addresses"];
+            NSDictionary *dc = json.firstObject;
+            NSString *zipcode = [dc objectForKey:@"zipcode"];
+            expect(zipcode).to.equal(@"12345-678");
         });
     });
-});
-
-describe(@"these will pass", ^{
     
-    it(@"can do maths", ^{
-        expect(1).beLessThan(23);
-    });
-    
-    it(@"can read", ^{
-        expect(@"team").toNot.contain(@"I");
-    });
-    
-    it(@"will wait and succeed", ^{
-        waitUntil(^(DoneCallback done) {
-            done();
+    describe(@"loading from dictionary json", ^{
+        it(@"should be able to load json and convert to dictionary", ^{
+            NSDictionary *json = [TLJsonFactory tl_jsonDictFromFile:@"address"];
+            expect(json).notTo.beNil();
+            expect(json).notTo.beEmpty();
+        });
+        
+        it(@"should have the expected zipcode for json's object", ^{
+            NSDictionary *json = [TLJsonFactory tl_jsonDictFromFile:@"address"];
+            NSString *zipcode = [json objectForKey:@"zipcode"];
+            expect(zipcode).to.equal(@"12345-678");
         });
     });
 });

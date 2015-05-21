@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E581C731B0D8429004AAE7C /* addresses.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E581C721B0D8429004AAE7C /* addresses.json */; };
+		3E581C751B0D8661004AAE7C /* address.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E581C741B0D8661004AAE7C /* address.json */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -16,11 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E581C721B0D8429004AAE7C /* addresses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addresses.json; sourceTree = "<group>"; };
+		3E581C741B0D8661004AAE7C /* address.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = address.json; sourceTree = "<group>"; };
 		50B5895DCAEE8E5292530DFE /* libPods-TLJsonFactory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TLJsonFactory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = TLJsonFactory.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* TLJsonFactory.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLJsonFactory.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -48,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E581C711B0D8407004AAE7C /* mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3E581C721B0D8429004AAE7C /* addresses.json */,
+				3E581C741B0D8661004AAE7C /* address.json */,
+			);
+			name = mocks;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +75,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F5AE195388D20070C39A /* TLJsonFactory.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +95,7 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3E581C711B0D8407004AAE7C /* mocks */,
 				6003F5BB195388D20070C39A /* Tests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
@@ -136,7 +150,7 @@
 			);
 			name = TLJsonFactory;
 			productName = TLJsonFactoryTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* TLJsonFactory.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +191,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E581C731B0D8429004AAE7C /* addresses.json in Resources */,
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+				3E581C751B0D8661004AAE7C /* address.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

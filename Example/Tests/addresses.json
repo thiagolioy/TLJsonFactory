@@ -1,0 +1,42 @@
+[
+ {
+ "uuid": "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+ "street": "Rua XXXXXXXXXXX",
+ "number": "3A",
+ "complement": "casa dos fundos",
+ "neighboorhood": "JD Vila Maria",
+ "zipcode": "12345-678",
+ "city": "São Paulo",
+ "federal_unit": "SP",
+ "default_billing": true,
+ "default_shipping": true,
+ "contact": {
+ "name": "O nome de alguém",
+ "phone": {
+ "ddi": 55,
+ "ddd": 11,
+ "phone": 123456789
+ }
+ }
+ },
+ {
+ "uuid": "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+ "street": "Rua YYYYYYYY",
+ "number": "6A",
+ "complement": "casa da frente",
+ "neighboorhood": "Horto Florestal",
+ "zipcode": "12345-987",
+ "city": "São Paulo",
+ "federal_unit": "SP",
+ "default_billing": false,
+ "default_shipping": false,
+ "contact": {
+ "name": "O nome de alguém",
+ "phone": {
+ "ddi": 55,
+ "ddd": 11,
+ "phone": 123456789
+ }
+ }
+ }
+ ]
