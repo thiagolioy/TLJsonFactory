@@ -20,4 +20,20 @@
     NSArray  *response = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options:kNilOptions error:nil];
     return response;
 }
+
+
++(NSDictionary *)tl_jsonDictFromFile:(NSString*)fileName fromBundle:(NSBundle*)bundle{
+    NSString * filePath = [bundle pathForResource:fileName ofType:@"json"];
+    NSDictionary  *response = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options:kNilOptions error:nil];
+    return response;
+}
+
++(NSArray *)tl_jsonArrayFromFile:(NSString*)fileName fromBundle:(NSBundle*)bundle{
+    NSString * filePath = [bundle pathForResource:fileName ofType:@"json"];
+    NSArray  *response = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options:kNilOptions error:nil];
+    return response;
+}
+
+
+
 @end

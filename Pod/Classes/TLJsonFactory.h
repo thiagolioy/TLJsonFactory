@@ -11,4 +11,6 @@
 @interface TLJsonFactory : NSObject
 +(NSDictionary *)tl_jsonDictFromFile:(NSString*)fileName;
 +(NSArray *)tl_jsonArrayFromFile:(NSString*)fileName;
++(NSDictionary *)tl_jsonDictFromFile:(NSString*)fileName fromBundle:(NSBundle*)bundle;
++(NSArray *)tl_jsonArrayFromFile:(NSString*)fileName fromBundle:(NSBundle*)bundle;
 @end
