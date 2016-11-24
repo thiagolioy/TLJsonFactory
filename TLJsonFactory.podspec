@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TLJsonFactory"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Helper pod to load json into objects for testing purposes."
   s.homepage         = "https://github.com/thiagolioy/TLJsonFactory"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
